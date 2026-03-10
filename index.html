@@ -385,13 +385,16 @@
       .g1,.g2,.g3,.g4,.g5,.g6,.g7,.g8,.g9 { grid-column: auto; grid-row: auto; height: 260px; }
       footer { flex-direction: column; gap: 10px; padding: 24px; text-align: center; }
     }
-  </style>
+  
+    .email-text::before { content: "filimonov.photo"; }
+    .email-text::after { content: "@mail.ru"; }
+</style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">Д.<span>Ф</span></a>
+  <a href="#" class="nav-logo">Фото<span>граф</span></a>
   <ul class="nav-links">
     <li><a href="#about">О фотографе</a></li>
     <li><a href="#gallery">Портфолио</a></li>
@@ -620,6 +623,7 @@
 <footer>
   <div class="footer-logo">Дмитрий <span>Филимонов</span></div>
   <p>© 2025 · Фотограф · Вилючинск, Камчатка</p>
+  <a href="mailto:filimonov.photo@mail.ru" style="font-size:0.72rem;color:var(--accent);text-decoration:none;">filimonov.photo@mail.ru</a>
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.mi
